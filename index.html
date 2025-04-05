@@ -1,9 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>hello coursera!</title>
+  <meta charset="UTF-8">
+  <title>Our Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .menu-box {
+      border: 1px solid black;
+      background-color: #e0e0e0;
+      padding: 40px 10px 10px 10px;
+      margin: 10px;
+      position: relative;
+    }
+
+    .menu-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px 10px;
+      border: 1px solid black;
+      font-size: 1.25em;
+    }
+
+    /* Specific colors for titles */
+    #chicken .menu-title {
+      background-color: #f2b6a0;
+    }
+
+    #beef .menu-title {
+      background-color: #e04b4b;
+      color: white;
+    }
+
+    #sushi .menu-title {
+      background-color: #f2e29b;
+    }
+
+    /* Desktop view */
+    @media (min-width: 992px) {
+      .menu-box {
+        width: 30.33%;
+        float: left;
+      }
+    }
+
+    /* Tablet view */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .menu-box {
+        width: 47%;
+        float: left;
+        margin: 1.5%;
+      }
+
+      #sushi {
+        width: 96%;
+        clear: both;
+      }
+    }
+
+    /* Mobile view */
+    @media (max-width: 767px) {
+      .menu-box {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>hello coursera! it's a great course!! hi omg</h1>
+  <h1>Our Menu</h1>
+  <div class="container">
+    <section class="menu-box" id="chicken">
+      <div class="menu-title">Chicken</div>
+      <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <section class="menu-box" id="beef">
+      <div class="menu-title">Beef</div>
+      <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <section class="menu-box" id="sushi">
+      <div class="menu-title">Sushi</div>
+      <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+  </div>
 </body>
 </html>
